@@ -3,19 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Евгений Титов — Автоматизация и диспетчеризация зданий</title>
-<meta name="description" content="Проектирование и внедрение систем автоматизации и диспетчеризации зданий (BMS). Полный цикл: проект, поставка, программирование, ПНР. 20+ лет опыта.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://evtitovpro.github.io/MyWebsite/">
-<meta property="og:title" content="Евгений Титов — Автоматизация и диспетчеризация зданий (BMS)">
-<meta property="og:description" content="Проектирование и внедрение систем автоматизации и диспетчеризации зданий. Полный цикл: проект, поставка, программирование, ПНР. 20+ лет опыта, официальный статус — Systeme Electric.">
-<meta property="og:image" content="https://evtitovpro.github.io/MyWebsite/og-image-v2.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Евгений Титов — Автоматизация и диспетчеризация зданий (BMS)">
-<meta name="twitter:description" content="Проектирование и внедрение систем автоматизации и диспетчеризации зданий. Полный цикл: проект, поставка, программирование, ПНР.">
-<meta name="twitter:image" content="https://evtitovpro.github.io/MyWebsite/og-image-v2.png">
+<title>Евгений Титов — BMS System Integrator | Автоматизация и диспетчеризация зданий</title>
+<meta name="description" content="Проектирование и внедрение систем автоматизации и диспетчеризации зданий (BMS) под ключ. 20+ лет опыта. 40+ объектов. Systeme Electric, Schneider Electric, TAC Vista.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,7 +41,6 @@
   ::selection{background:var(--accent-tint); color:var(--accent-dark);}
   :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px;}
 
-  /* ---- floating pill nav ---- */
   .navpill{
     position:sticky; top:14px; z-index:30;
     background:rgba(255,255,255,0.68);
@@ -72,7 +60,6 @@
   .nav-cta:hover{background:var(--accent-dark);}
   .nav-cta:active{transform:scale(0.97);}
 
-  /* ---- island shell ---- */
   .island{
     background:var(--island); border-radius:26px; box-shadow:var(--shadow-md);
     padding:44px 40px;
@@ -115,7 +102,6 @@
   h2{font-family:var(--font-display); font-weight:700; font-size:clamp(21px,2.6vw,26px); color:var(--ink); max-width:22ch; line-height:1.25;}
   .scope-text{font-size:15.5px; color:var(--muted); max-width:62ch; margin-top:14px; line-height:1.75;}
 
-  /* ---- process pills ---- */
   .flow{margin-top:34px; display:flex; align-items:center; gap:0; overflow-x:auto; padding:4px 4px 10px;}
   .node{display:flex; align-items:center; flex:none;}
   .capsule{
@@ -138,7 +124,6 @@
     .connector{width:2px; height:16px; margin:0 0 0 22px;}
   }
 
-  /* ---- strengths ---- */
   .stats{margin-top:30px; display:grid; grid-template-columns:repeat(5,1fr); gap:14px;}
   .stat{background:var(--island-soft); border-radius:18px; padding:20px 18px;}
   .stat .num{font-family:var(--font-display); font-size:28px; font-weight:800; color:var(--accent-dark); line-height:1;}
@@ -147,7 +132,28 @@
   .stat.badge .num{font-size:17px; color:var(--ink);}
   @media (max-width:700px){.stats{grid-template-columns:1fr 1fr;} .stat.badge{grid-column:1/-1;}}
 
-  /* ---- objects ---- */
+  .badge-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:24px;}
+  .badge{
+    background:var(--island-soft); border:1px solid var(--hair);
+    padding:8px 16px; border-radius:999px;
+    font-size:13px; font-weight:500; color:var(--ink-soft);
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .badge-dot{width:7px; height:7px; border-radius:50%; background:var(--accent); flex:none; box-shadow:0 0 0 3px var(--accent-tint);}
+
+  .timeline{margin-top:30px; position:relative; padding-left:28px;}
+  .timeline::before{
+    content:''; position:absolute; left:6px; top:8px; bottom:8px; width:2px; background:var(--hair);
+  }
+  .t-item{position:relative; padding:20px 0 20px 24px;}
+  .t-item::before{
+    content:''; position:absolute; left:-28px; top:26px; width:10px; height:10px; border-radius:50%;
+    background:var(--accent); box-shadow:0 0 0 4px var(--accent-tint);
+  }
+  .t-year{font-family:var(--font-display); font-size:13px; font-weight:700; color:var(--accent-dark); text-transform:uppercase; letter-spacing:0.06em;}
+  .t-title{font-family:var(--font-display); font-size:16px; font-weight:600; color:var(--ink); margin-top:4px;}
+  .t-desc{font-size:14px; color:var(--muted); margin-top:6px; line-height:1.6; max-width:56ch;}
+
   .objects{margin-top:6px; display:flex; flex-direction:column; gap:6px;}
   .obj-row{
     display:flex; align-items:baseline; justify-content:space-between; gap:16px;
@@ -165,7 +171,21 @@
   }
   .btn-outline:hover{background:var(--accent-tint); color:var(--accent-dark);}
 
-  /* ---- contact ---- */
+  .audience-grid{margin-top:30px; display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+  .aud-card{
+    background:var(--island-soft); border-radius:18px; padding:24px 20px;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .aud-card:hover{background:var(--accent-tint); transform:translateY(-2px);}
+  .aud-icon{
+    width:40px; height:40px; background:#fff; border-radius:12px;
+    display:flex; align-items:center; justify-content:center; font-size:20px;
+    margin-bottom:14px; box-shadow:var(--shadow-sm);
+  }
+  .aud-card h3{font-family:var(--font-display); font-size:16px; font-weight:700; color:var(--ink); margin-bottom:8px;}
+  .aud-card p{font-size:13.5px; color:var(--muted); line-height:1.6; margin:0;}
+  @media (max-width:700px){.audience-grid{grid-template-columns:1fr;}}
+
   .contact-grid{margin-top:30px; display:grid; grid-template-columns:1.1fr 1fr; gap:20px;}
   .contact-card{background:var(--island-soft); border-radius:18px; padding:22px 22px 6px;}
   .contact-line{display:flex; justify-content:space-between; align-items:baseline; padding:13px 0; border-bottom:1px solid var(--hair); font-size:14.5px;}
@@ -196,61 +216,120 @@
     <a class="nav-cta" href="https://t.me/evtitov">Telegram</a>
   </div>
 
+  <!-- HERO -->
   <header class="island reveal">
-    <div class="status"><span class="dot"></span>инженер полного цикла · новосибирск</div>
     <h1>Евгений Титов</h1>
-    <p class="role">Проектирую и запускаю <b>системы автоматизации и диспетчеризации зданий</b> (BMS)</p>
-    <p class="pitch">Один инженер отвечает за весь раздел АСУиД (АК, АОВ, АТМ, ...) — от чертежа в AutoCAD до пусконаладки на объекте. На рынке с 2006 года: прошёл путь от оборудования TAC Vista 5 и Schneider Electric до нынешней платформы Systeme Electric.</p>
-    <div class="hero-actions">
-      <a class="btn" href="https://t.me/evtitov">Написать в Telegram →</a>
-      <a class="link-quiet" href="tel:+79232235716">+7 923 223 57 16</a>
+    <p class="pitch">Проектирую и внедряю системы автоматизации и диспетчеризации зданий — от чертежа в AutoCAD до ПНР и сдачи объекта в эксплуатацию. 20 лет. 40+ объектов. Полный цикл в одних руках.</p>
+    <div class="badge-row">
+      <span class="badge"><span class="badge-dot"></span>Systeme Electric — партнёр</span>
+      <span class="badge"><span class="badge-dot"></span>Schneider Electric — партнёр</span>
+      <span class="badge"><span class="badge-dot"></span>TAC Vista — эксперт</span>
+      <span class="badge"><span class="badge-dot"></span>Россия, Сибирь и Дальний Восток</span>
+    </div>
+    <div class="stats" style="margin-top:28px;">
+      <div class="stat"><div class="num">20+</div><div class="sub">лет на рынке</div></div>
+      <div class="stat"><div class="num">40+</div><div class="sub">реализованных объектов</div></div>
+      <div class="stat"><div class="num">6</div><div class="sub">городов присутствия</div></div>
     </div>
   </header>
 
+  <!-- SERVICES -->
   <section class="island reveal">
-    <div class="eyebrow">чем занимаюсь</div>
-    <h2>Весь раздел АСУиД в одних руках, без потерь на стыках подрядчиков</h2>
-    <p class="scope-text">Беру объект целиком: концепция, проектная документация, поставка оборудования, программирование контроллеров и SCADA, шеф-монтаж и пусконаладка. Один договор, один ответственный, одна точка контакта на всех этапах.</p>
-
-    <div class="flow">
-      <div class="node active"><div class="capsule"><span class="num-badge">1</span><span class="label">Концепция</span></div></div>
-      <div class="connector"></div>
-      <div class="node active"><div class="capsule"><span class="num-badge">2</span><span class="label">Проект АСУиД</span></div></div>
-      <div class="connector"></div>
-      <div class="node active"><div class="capsule"><span class="num-badge">3</span><span class="label">Поставка</span></div></div>
-      <div class="connector"></div>
-      <div class="node active"><div class="capsule"><span class="num-badge">4</span><span class="label">Программирование</span></div></div>
-      <div class="connector"></div>
-      <div class="node active"><div class="capsule"><span class="num-badge">5</span><span class="label">ПНР</span></div></div>
+    <div class="eyebrow">чем отличаюсь</div>
+    <h2>Полный цикл — без потерь на стыках</h2>
+    <p class="scope-text">Я делаю всё: проект → щиты → программирование контроллеров → SCADA → ПНР. Информация не теряется между подрядчиками.</p>
+    <div class="audience-grid" style="margin-top:30px;">
+      <div class="aud-card">
+        <div class="aud-icon">📐</div>
+        <h3>Проектирование</h3>
+        <p>Разделы АСУиД, АК, АОВ, АТМ — проектная и рабочая документация в AutoCAD. Работаю как технический партнёр ГИПа.</p>
+      </div>
+      <div class="aud-card">
+        <div class="aud-icon">📦</div>
+        <h3>Поставка и сборка</h3>
+        <p>Подбор оборудования напрямую от производителя. Сборка щитов автоматизации по моим чертежам на производстве.</p>
+      </div>
+      <div class="aud-card">
+        <div class="aud-icon">💻</div>
+        <h3>Программирование</h3>
+        <p>Контроллеры и SCADA-система: Systeme Electric, Schneider Electric, TAC Vista. Единая диспетчеризация комплекса зданий.</p>
+      </div>
+      <div class="aud-card">
+        <div class="aud-icon">🔧</div>
+        <h3>Пусконаладка</h3>
+        <p>Выезд на объект, настройка алгоритмов, сдача в эксплуатацию. Гарантийное и постгарантийное обслуживание.</p>
+      </div>
     </div>
   </section>
 
+  <!-- TIMELINE -->
   <section class="island reveal">
-    <div class="eyebrow">сильные стороны</div>
-    <div class="stats">
-      <div class="stat"><div class="num">20+</div><div class="sub">лет в автоматизации зданий</div></div>
-      <div class="stat"><div class="num">40+</div><div class="sub">реализованных объектов</div></div>
-      <div class="stat"><div class="num">3</div><div class="sub">поколения оборудования освоено: TAC → Schneider Electric → Systeme Electric</div></div>
-      <div class="stat badge"><div class="num">Статус</div><div class="sub">официальный статус — сертифицированный системный интегратор Systeme Electric, ECO Expert Schneider Electric, эксперт TAC Vista 5</div></div>
+    <div class="eyebrow">опыт</div>
+    <h2>Прошёл путь от TAC Vista до Systeme Electric</h2>
+    <p class="scope-text">Работал с тремя поколениями оборудования. Умею интегрировать новые системы со старой автоматикой — критично для реконструкций и модернизаций.</p>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-year">2006 — 2012</div>
+        <div class="t-title">TAC Vista 5</div>
+        <div class="t-desc">ТРК «Ройял Парк», БЦ «Хилтон», МВЦ «Новосибирск Экспоцентр», НГУЭиУ, завод VEKA</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2013 — 2023</div>
+        <div class="t-title">Schneider Electric</div>
+        <div class="t-desc">ТЦ «Леруа Мерлен» (Новосибирск, Новокузнецк, Омск), Поликлиника №4 Южно-Сахалинск, Медцентр РУСАЛ Красноярск, БЦ Нефтепарка</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2024 — н.в.</div>
+        <div class="t-title">Systeme Electric — сертифицированный партнёр</div>
+        <div class="t-desc">Школа №24 на 1260 мест, Южно-Сахалинск. Российское оборудование, импортозамещение, сервис без рисков параллельного импорта.</div>
+      </div>
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section class="island reveal">
-    <div class="eyebrow">избранные объекты</div>
-    <div class="objects">
-      <div class="obj-row"><span><span class="obj-name">Школа №24 на 1260 мест</span><span class="obj-city">Южно-Сахалинск</span></span><span class="obj-year">2025</span></div>
-      <div class="obj-row"><span><span class="obj-name">Медцентр «РУСАЛ»</span><span class="obj-city">Красноярск</span></span><span class="obj-year">2023</span></div>
-      <div class="obj-row"><span><span class="obj-name">Поликлиника №4</span><span class="obj-city">Южно-Сахалинск</span></span><span class="obj-year">2022</span></div>
-      <div class="obj-row"><span><span class="obj-name">Сеть ТЦ «Леруа Мерлен»</span><span class="obj-city">3 города</span></span><span class="obj-year">2015–17</span></div>
-      <div class="obj-row"><span><span class="obj-name">БЦ «Хилтон»</span><span class="obj-city">Новосибирск</span></span><span class="obj-year">2009</span></div>
+    <div class="eyebrow">ключевые объекты</div>
+    <h2>От торговых центров до школ и нефтегазовых БЦ</h2>
+    <p class="scope-text">Работаю с объектами любого масштаба: от отдельного ИТП до диспетчеризации комплекса из нескольких зданий на 61 систему вентиляции.</p>
+    <div class="objects" style="margin-top:18px;">
       <div class="obj-row"><span><span class="obj-name">ТРК «Ройял Парк»</span><span class="obj-city">Новосибирск</span></span><span class="obj-year">2007</span></div>
+      <div class="obj-row"><span><span class="obj-name">ТЦ «Леруа Мерлен»</span><span class="obj-city">3 города</span></span><span class="obj-year">2015–17</span></div>
+      <div class="obj-row"><span><span class="obj-name">Поликлиника №4</span><span class="obj-city">Южно-Сахалинск</span></span><span class="obj-year">2022</span></div>
+      <div class="obj-row"><span><span class="obj-name">Медцентр «РУСАЛ»</span><span class="obj-city">Красноярск</span></span><span class="obj-year">2023</span></div>
+      <div class="obj-row"><span><span class="obj-name">БЦ Нефтепарка</span><span class="obj-city">Южно-Сахалинск</span></span><span class="obj-year">2024</span></div>
+      <div class="obj-row"><span><span class="obj-name">Школа №24 на 1260 мест</span><span class="obj-city">Южно-Сахалинск</span></span><span class="obj-year">2025</span></div>
     </div>
-    <div class="obj-actions">
-      <a class="btn-outline" href="https://drive.google.com/open?id=1-9UC_Kt_mJP3nCIdF8LyNPe5UMyM5YTl&usp=drive_fs" target="_blank" rel="noopener noreferrer">Посмотреть портфолио (PDF) ↗</a>
-      <a class="btn-outline" href="https://drive.google.com/file/d/1CH0DD-OBhWwBtew19TILWekmyK0soJZr/view?usp=sharing" target="_blank" rel="noopener noreferrer">Посмотреть пример проекта (PDF) ↗</a>
+    <div class="obj-actions" style="margin-top:22px;">
+      <a class="btn-outline" href="https://drive.google.com/open?id=1-9UC_Kt_mJP3nCIdF8LyNPe5UMyM5YTl&usp=drive_fs" target="_blank" rel="noopener noreferrer">📄 Скачать портфолио (PDF) ↗</a>
+      <a class="btn-outline" href="https://drive.google.com/file/d/1CH0DD-OBhWwBtew19TILWekmyK0soJZr/view?usp=sharing" target="_blank" rel="noopener noreferrer">📋 Скачать пример проекта (PDF) ↗</a>
     </div>
   </section>
 
+  <!-- AUDIENCE -->
+  <section class="island reveal">
+    <div class="eyebrow">для кого</div>
+    <h2>Работаю с проектными институтами и генподрядчиками</h2>
+    <p class="scope-text">Если вы ГИП или руководитель проекта — я беру на себя весь раздел АСУиД (АК, АОВ, АТМ,..). Если вы генподрядчик — беру автоматизацию на субподряд. Регион: Россия, Сибирь, Дальний Восток, Сахалин, Камчатка, Курилы.</p>
+    <div class="audience-grid">
+      <div class="aud-card">
+        <div class="aud-icon">📋</div>
+        <h3>Проектные институты</h3>
+        <p>Разрабатываю разделы проектной документации. Работаю как технический партнёр ГИПа на всех стадиях согласования.</p>
+      </div>
+      <div class="aud-card">
+        <div class="aud-icon">🏗️</div>
+        <h3>Генподрядчики</h3>
+        <p>Субподряд по автоматизации и диспетчеризации. От поставки оборудования до ПНР и сдачи объекта.</p>
+      </div>
+      <div class="aud-card">
+        <div class="aud-icon">🏛️</div>
+        <h3>Эксплуатирующие организации</h3>
+        <p>Модернизация устаревших BMS (TAC Vista → Schneider/Systeme Electric). Интеграция без полной замены.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section class="island reveal">
     <div class="eyebrow">на связи</div>
     <h2>Готовы обсудить объект?</h2>

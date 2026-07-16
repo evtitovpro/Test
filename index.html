@@ -144,14 +144,14 @@
   /* timeline */
   .timeline{margin-top:30px; display:flex; flex-direction:column; position:relative; padding-left:28px;}
   .timeline::before{content:''; position:absolute; left:5px; top:8px; bottom:8px; width:2px; background:var(--hair);}
-  .trow{display:flex; gap:22px; padding:20px 0; border-bottom:1px solid var(--hair); position:relative;}
+  .trow{display:flex; gap:11px; padding:20px 0; border-bottom:1px solid var(--hair); position:relative;}
   .trow::before{content:''; position:absolute; left:-28px; top:28px; width:11px; height:11px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px var(--island);}
   .trow:last-child{border-bottom:none; padding-bottom:0;}
   .trow:first-child{padding-top:0;}
   .trow:first-child::before{top:8px;}
   .tyear{
-    flex:none; width:120px; font-size:12.5px; font-weight:700; color:var(--accent-dark); background:none;
-    padding:6px 0; height:fit-content; text-align:left;
+    flex:none; width:88px; font-size:12.5px; font-weight:700; color:var(--accent-dark); background:none;
+    padding:6px 0; height:fit-content; text-align:left; white-space:nowrap;
   }
   .tbody h4{font-family:var(--font-display); font-weight:700; font-size:16px; color:var(--ink); margin-bottom:6px;}
   .tbody span{font-size:13.5px; color:var(--muted); line-height:1.6;}

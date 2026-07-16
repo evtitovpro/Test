@@ -114,6 +114,14 @@
     transition:background .15s ease, color .15s ease;
   }
   .btn-outline:hover{background:var(--accent-tint); color:var(--accent-dark);}
+  .btn-ghost{
+    font-size:14px; font-weight:600; color:var(--accent-dark); background:var(--island-soft);
+    border:1.5px solid var(--accent); border-radius:999px; padding:11.5px 22px;
+    text-decoration:none; display:inline-flex; align-items:center; gap:8px;
+    transition:background .15s ease, color .15s ease;
+  }
+  .btn-ghost:hover{background:var(--accent); color:#fff;}
+  .obj-actions{display:flex; gap:14px; flex-wrap:wrap; margin-top:32px;}
 
   .eyebrow{font-size:13px; font-weight:700; letter-spacing:0.02em; color:var(--accent-dark); text-transform:uppercase; margin-bottom:14px;}
   h2{font-family:var(--font-display); font-weight:700; font-size:clamp(22px,2.8vw,28px); color:var(--ink); max-width:24ch; line-height:1.25; margin-bottom:14px;}
@@ -195,10 +203,6 @@
       <div class="stat-inline"><div class="num">6</div><div class="lbl">городов присутствия</div></div>
     </div>
 
-    <div class="hero-actions">
-      <a class="btn" href="https://drive.google.com/file/d/1lXl5TeH_QvuQ-r_7FZTCXDyEn51x35gG/view?usp=sharing" target="_blank" rel="noopener noreferrer">Посмотреть портфолио (PDF) ↗</a>
-      <a class="btn-outline" href="https://drive.google.com/file/d/1CH0DD-OBhWwBtew19TILWekmyK0soJZr/view?usp=sharing" target="_blank" rel="noopener noreferrer">Посмотреть пример проекта (PDF) ↗</a>
-    </div>
   </header>
 
   <!-- SERVICES -->
@@ -299,6 +303,11 @@
         <h3>Школа №24</h3>
         <p>1260 мест, 25 систем вентиляции, 1618 точек контроля. Systeme Electric. Южно-Сахалинск, 2025.</p>
       </div>
+    </div>
+
+    <div class="obj-actions">
+      <a class="btn-ghost" href="https://drive.google.com/file/d/1lXl5TeH_QvuQ-r_7FZTCXDyEn51x35gG/view?usp=sharing" target="_blank" rel="noopener noreferrer">Посмотреть портфолио (PDF) ↗</a>
+      <a class="btn-ghost" href="https://drive.google.com/file/d/1CH0DD-OBhWwBtew19TILWekmyK0soJZr/view?usp=sharing" target="_blank" rel="noopener noreferrer">Посмотреть пример проекта (PDF) ↗</a>
     </div>
   </section>
 
